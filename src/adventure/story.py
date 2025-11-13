@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     console.print("[i]You wake up in a dark forest.[/i] You can go [cyan]left[/cyan] or [magenta]right.[/magenta]")
     while True:
-        choice = Prompt.ask("Which direction do you choose? ([cyan]left[/cyan]/[magenta]right[/magenta]/[red]exit[/red])", case_sensitive=False)
+        choice = Prompt.ask("[b]Which direction do you choose?[/b] ([cyan]left[/cyan]/[magenta]right[/magenta]/[red]exit[/red])", case_sensitive=False)
         choice = choice.strip()
         if choice == 'exit':
             break
