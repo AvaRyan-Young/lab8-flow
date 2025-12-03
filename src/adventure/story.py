@@ -24,9 +24,10 @@ if __name__ == "__main__":
 
     print("You wake up in a dark forest. You can go left or right.")
     while True:
-        choice = input("Which direction do you choose? (left/right/exit): ")
+        choice = Prompt.ask("[b]Which direction do you choose?[/b] ([cyan]left[/cyan]/[magenta]right[/magenta]/[red]exit[/red])", case_sensitive=False)
         choice = choice.strip().lower()
         if choice == 'exit':
+            print("Goodbye")
             break
         
         print(step(choice, events))
