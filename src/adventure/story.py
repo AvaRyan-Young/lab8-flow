@@ -32,6 +32,7 @@ if __name__ == "__main__":
         choice = Prompt.ask("[b]Which direction do you choose?[/b] ([cyan]left[/cyan]/[magenta]right[/magenta]/[red]exit[/red])", case_sensitive=False)
         choice = choice.strip()
         if choice == 'exit':
+            console.print("Goodbye", style = red)
             break
         
         print(step(choice, events))
